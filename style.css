@@ -199,6 +199,7 @@ a{
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
+	position: absolute;
 	width: 90%;
 }
 #contact .contact-items {
@@ -238,3 +239,44 @@ a{
 	font-weight: 500;
 }
 /*End contact Section */
+
+
+
+/* About Section */
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#about .col-left {
+	width: 10px;
+	height: 10px;
+}
+#about .col-right {
+	width: 100%;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-left .about-img {
+	height: 10%;
+	width: 10%;
+	position: relative;
+	border: 5 px solid white;
+}
+
+/* End About Section */
