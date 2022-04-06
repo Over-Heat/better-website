@@ -105,29 +105,43 @@ a{
 }
 /* end mine*/
 
-/* Keyframes */
-@keyframes text_reveal_box {
-	50% {
-		width: 100%;
-		left: 0;
-	}
-	100% {
-		width: 0;
-		left: 100%;
-	}
+/* About Section */
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
 }
-@keyframes text_reveal {
-	100% {
-		color: white;
-	}
+#about .col-left {
+	width: 250px;
+	height: 360px;
 }
-@keyframes text_reveal_name {
-	100% {
-		color: orange;
-		font-weight: 1000;
-	}
+#about .col-right {
+	width: 100%;
 }
-/* End Keyframes */
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-right .section-title{
+	font-size: 70px;
+
+}
+
+/* End About Section */
+
 
 /* education Section */
 #education .education{
@@ -244,36 +258,26 @@ a{
 }
 /*End contact Section */
 
-
-/*
-/* About Section */
-* {
-	box-sizing: border-box;
-  }
-  
-  /* Create two equal columns that float next to each other */
-  .column-2 {
-	float: left;
-	width: 45%;
-	padding: 40px;
-	padding-left:70px;
-	padding-right: 70px;
-	height: 480px;
-	margin:30px;
-	margin-right:30px;
-	margin-bottom: 70px;
-	background-color: #FEDE00;
-	line-height:2;
-  }
-/* Large profile image */
-.large-profile {
-  background: url('../img/talha.jpg');
-	size: 500px;
-  padding-top: 50%;
-
-  padding-bottom: 10%;
-  position: right;
-  border-top: 10px;
-  border-bottom: 50px;
-  
+/* Keyframes */
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
 }
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: orange;
+		font-weight: 1000;
+	}
+}
+/* End Keyframes */
