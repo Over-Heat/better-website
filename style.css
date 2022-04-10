@@ -125,18 +125,21 @@ a{
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
+	color: white;
 }
 #about .col-right p {
 	margin-bottom: 20px;
 }
 #about .col-right .cta {
-	color: black;
+	
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
+	color: white;
 }
 #about .col-right .section-title{
 	font-size: 70px;
+	color: white;
 
 }
 
@@ -204,6 +207,10 @@ a{
 	color: white;
 	text-align: left;
 }
+#education .education-title{
+	color: white;
+	font-size: 35px;
+  }
 /* End education Section */
 
 
