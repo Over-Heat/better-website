@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
 * {
 	padding: 0;
 	margin: 0;
@@ -70,7 +70,7 @@ a{
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color:  orange;
+	background-color:  #bcfd4c;
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -78,9 +78,9 @@ a{
 #mine .cta{
     display: inline-block;
 	padding: 10px 30px;
-	color: orange;
+	color: #bcfd4c;
 	background-color: transparent;
-	border: 2px solid orange;
+	border: 2px solid #bcfd4c;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -91,7 +91,7 @@ a{
 }
 #mine .cta:hover{
     color: white;
-    background-color: orange;
+    background-color: #bcfd4c;
 
 }
 #mine h1:nth-child(1) span {
@@ -215,21 +215,112 @@ a{
 
 
 
-/* contact Section */
+
+/* Services Section */
+#resume .resume {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#resume .resume-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#resume .resume-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#resume .resume-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/img-1.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#resume .resume-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#resume .resume-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#resume .resume-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#resume .resume-item p {
+	color: white;
+	text-align: left;
+}
+#resume .title-title{
+	font: 50px;
+}
+/* End Services Section */
+/* Contact Section */
+
+ #contact::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
+}
+
+#contact .contact {
+   flex-direction: column-reverse;
+   text-align: center;
+   max-height: 800px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 100px 20px;
+}
+#contact h1 {
+	margin-bottom: 50px;
+	font-weight: 100;
+	font-size: 70px;
+	color: white;
+	
+}
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	position: absolute;
 	width: 90%;
-	color: #ffffff;
 }
 #contact .contact-items {
 	/* max-width: 400px; */
 	width: 100%;
 }
 #contact .contact-item {
-	width: 80%;
+	width: 90%;
 	padding: 20px;
 	text-align: center;
 	border-radius: 10px;
@@ -239,32 +330,29 @@ a{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
+	box-shadow: 0px 0px 18px 0 #bcfd4c;
 	transition: 0.3s ease box-shadow;
-	
 }
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
-}
+
 #contact .icon {
-	width: 70px;
+	width: 80px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
 #contact .contact-info h1 {
 	font-size: 2.5rem;
-	font-weight: 500;
+	font-weight: 1000;
 	margin-bottom: 5px;
-	color: white;
+    color: white;
+	
 }
 #contact .contact-info h2 {
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
-	color: #ffffff;
+    color: white;
 }
-
-/*End contact Section */
+/* End of Contact Section */
 
 /* Keyframes */
 @keyframes text_reveal_box {
@@ -284,7 +372,7 @@ a{
 }
 @keyframes text_reveal_name {
 	100% {
-		color: orange;
+		color: #bcfd4c;
 		font-weight: 1000;
 	}
 }
